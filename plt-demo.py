@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 线性回归
-from sklearn import linear_model
+from sklearn import linear_model, svm
 
 # 定义训练数据
 # 定义训练数据（100个二维1-30随机离散点）
@@ -19,6 +19,7 @@ model.fit(x, y)
 result = model.predict(x)
 score = model.score(x, y)
 print(score)
+
 
 # 标记绘图说明
 plt.title("xianxianhuigui")
